@@ -107,6 +107,10 @@ body a {
   background-position: center center;
 }
 
+#blog-post .card img {
+  height: 280px;
+}
+
 #contact-header {
   background-image: url("../img/contactus.jpg");
   background-size: cover;
