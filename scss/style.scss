@@ -1,0 +1,172 @@
+$icon-size : 50px;
+$dark-overlay : rgba(0, 0, 0, 0.7);
+
+
+body a {
+    text-decoration: none;
+}
+.navbar {
+    .nav-item {
+        padding-right: 1rem;
+        text-transform: uppercase;
+    }
+
+    .nav-item:last-child {
+        padding-right: 0;
+    }
+}
+
+#showcase {
+
+    .carousel-img-1 {
+        background-image: url("../img/image1.jpeg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-img-2 {
+        background-image: url("../img/image2.jpeg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-img-3 {
+        background-image: url("../img/image3.jpeg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-item {
+        height: 450px !important;
+    }
+    
+}
+
+#home-icon {
+    .bi {
+        font-size: $icon-size;
+    }
+}
+
+#get-started {
+    position: relative;
+    background-image: url("../img/bg1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 250px;
+
+    .dark-overlay {
+        background: $dark-overlay;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+#home-video {
+    background-image: url("../img/people.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .overlay {
+        background: $dark-overlay;
+    }
+
+    .bi {
+        color: red;
+        font-size: $icon-size;
+    }
+}
+
+#home-gallery {
+
+    img{
+        height: 300px;
+        margin-top: 30px;
+    }
+}
+
+#footer {
+    background-color: black;
+}
+
+// ABOUT SECTION
+
+#about-header {
+    background-image: url("../img/image1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-info {
+    img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+#about-iconbox {
+    .bi {
+        font-size: $icon-size;
+    }
+}
+
+#about-testimonial {
+    .slick-prev::before,
+    .slick-next::before {
+        font-size: 25px;
+        color: hsla(0, 0%, 0%, 0.805);
+    }
+}
+
+
+// SERVICES SECTION
+
+#services-header {
+    background-image: url('../img/image3.jpeg');
+}
+
+#services-pricing {
+    .bi {
+        font-size: 20px;
+    }
+}
+
+
+//BLOG SECTION
+
+#blog-header {
+    background-image: url('../img/image2.jpeg');
+    background-position: center center;
+}
+
+
+//CONTACT SECTION
+
+#contact-header {
+    background-image: url('../img/contactus.jpg');
+    background-size: cover;
+
+    .contact-overlay {
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+
+
+
+@media (max-width : 992px ) {
+    #get-started {
+        min-height: 300px;
+    }
+}
+
+@media (max-width : 480px ) {
+    #get-started {
+        min-height: 350px;
+    }
+}
